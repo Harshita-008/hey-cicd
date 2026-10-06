@@ -1,6 +1,6 @@
-# ⚡ hey-cicd — DevSecOps Dashboard
+# hey-cicd — DevSecOps Dashboard
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 hey-cicd/
@@ -27,7 +27,7 @@ hey-cicd/
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 | Method | Route | Description |
 |--------|-------|-------------|
@@ -41,7 +41,7 @@ hey-cicd/
 
 ---
 
-## 🖥️ Method 1 — Run Manually (Python)
+## Method 1 — Run Manually (Python)
 
 ### Step 1 — Clone the repository
 
@@ -118,7 +118,7 @@ curl -X POST http://localhost:5001/api/calculate \
 
 ---
 
-## 🐳 Method 2 — Run with Docker
+## Method 2 — Run with Docker
 
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
@@ -159,7 +159,7 @@ docker run -d -p 5001:5001 hey-cicd:latest
 
 ---
 
-## ⚙️ Method 3 — CI/CD Pipeline (GitHub Actions)
+## Method 3 — CI/CD Pipeline (GitHub Actions)
 
 The pipeline runs automatically every time you push code to `main` or open a pull request.
 
@@ -217,7 +217,7 @@ Go to **GitHub repo → Settings → Secrets and variables → Actions** and add
 |-------------|-------|
 | `KUBECONFIG` | Contents of your `~/.kube/config` file (needed for Step 7 deploy) |
 
-> ℹ️ `GITHUB_TOKEN` is automatically provided by GitHub — you don't need to add it manually.
+> `GITHUB_TOKEN` is automatically provided by GitHub — you don't need to add it manually.
 
 ### View your Docker image after push
 
@@ -230,7 +230,7 @@ Go to **GitHub repo → Packages** to see it.
 
 ---
 
-## ☸️ Method 4 — Deploy to Kubernetes manually
+## Method 4 — Deploy to Kubernetes manually
 
 > Do this if you want to deploy without the pipeline, directly from your terminal.
 
@@ -278,7 +278,7 @@ kubectl delete -f k8s/service.yaml
 
 ---
 
-## 🧪 DevSecOps Concepts Covered
+## DevSecOps Concepts Covered
 
 | Concept | Tool Used | Where |
 |---------|-----------|-------|
@@ -293,7 +293,7 @@ kubectl delete -f k8s/service.yaml
 
 ---
 
-## 👩‍💻 Built With
+## Built With
 
 - **Python 3.12** + **Flask 3.x**
 - **Docker**
